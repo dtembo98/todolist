@@ -6,8 +6,8 @@ const todolistSchema = new schema({
 
 
        taskName: {type:String,required:true},
-       isComplete:{type:Boolean},
-       subtasks:[{subtaskName:{type:String},isComplete:{type:Boolean}}]
+       isComplete:{type:Boolean,default:false},
+       subtasks:[{subtaskName:{type:String,required:true},isComplete:{type:Boolean,default:false}}]
    
 
 
